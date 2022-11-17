@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-div{
+    width: 80%;
+    height: 150px;
+    position: relative;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #ededed;
+    font-weight: 600;
+    background-color: transparent;
+    box-shadow: 0 8px 10px #794DE3;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+.imgs{
+    height: 150px;
+    position: absolute;
+    left: 0;
+    width: 250px;
+    border-radius: 25px;
+}
+.texts{
+    position: absolute;
+    left: 260px;
+    display: flex;
+    gap: 15px;
+    color: white;
+}
+    .name{
+        width: 150px;
+        display: flex;
+        font-weight: 700;
+        color: cadetblue;
+    }
+.App{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 50px;
+    background-image: url(../imgs/190762883.jpg);
+}
+.card-div::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent,#7a4de398,transparent);
+    transform: skewX(45deg);
+    border-radius: 32px 0 0 32px;
+    z-index: -1;
+}
